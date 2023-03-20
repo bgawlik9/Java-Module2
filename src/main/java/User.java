@@ -25,8 +25,7 @@ public class User {
             sum += users[i].age;
         }
 
-        int average;
-        average = sum/users.length;
+        int average = sum/users.length;
         System.out.println(average);
 
 
