@@ -12,26 +12,19 @@ public class Colors {
             String color = scanner.nextLine().trim().toUpperCase();
             switch (color) {
                 case "B":
-                    System.out.println("Blue");
-                    break;
+                    return "BLUE";
                 case "G":
-                    System.out.println("Green");
-                    break;
+                    return "GREEN";
                 case "P":
-                    System.out.println("Pink");
-                    break;
+                    return "PINK";
                 case "R":
-                    System.out.println("Red");
-                    break;
+                    return "RED";
                 case "O":
-                    System.out.println("Orange");
-                    break;
+                    return "ORANGE";
                 case "W":
-                    System.out.println("White");
-                    break;
+                    return "WHITE";
                 case "Y":
-                    System.out.println("Yellow");
-                    break;
+                    return "YELLOW";
                 default:
                     System.out.println("Bad color. Try again.");
             }
@@ -41,6 +34,6 @@ public class Colors {
 
 
     public static void main(String[] args) {
-        Colors.getUserColorSelection();
+        System.out.println(Colors.getUserColorSelection());
     }
 }
