@@ -19,10 +19,16 @@ public class Grades {
     }
 
     public int getLastAddedGrade() {
-        return this.grades[this.size - 1];
+        if(this.size > 0){
+        int lastAddedGrade = this.grades[this.size - 1];
+        return  lastAddedGrade; }
+        else
+            System.out.println("Liczba dodanych ocen wynosi:  ");
+            return 0;
     }
 
     public double averageGrade(){
+
          double sum = 0;
 
         for (int i = 0; i < this.size ; i++) {
@@ -36,12 +42,10 @@ public class Grades {
 
     public static void main(String[] args) {
         Grades grades = new Grades();
-        grades.add(1);
-        grades.add(2);
-        grades.add(8);
-
+       // grades.add(1);
         double grade = grades.averageGrade();
-        System.out.println(grade);
+
+        System.out.println(grades.getLastAddedGrade());
     }
 }
 
